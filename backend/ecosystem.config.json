@@ -1,0 +1,19 @@
+{
+  "apps": [{
+    "name": "data-management-api",
+    "script": "src/index.ts",
+    "interpreter": "node",
+    "interpreter_args": "-r ts-node/register",
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    },
+    "watch": true,
+    "ignore_watch": ["node_modules", "logs"],
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file": "logs/error.log",
+    "out_file": "logs/out.log"
+  }]
+}
